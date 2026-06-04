@@ -72,7 +72,7 @@ export const botConfig = {
     applicationCooldown: 24, 
 
     // Auto-delete denied applications after this many days.
-    deleteDeniedAfter: 7, 
+    deleteDeniedAfter: 1, 
 
     // Auto-delete approved applications after this many days.
     deleteApprovedAfter: 30, 
@@ -311,7 +311,7 @@ export const botConfig = {
 
       // Allowed safety limits for account-age requirements.
       // 1 = minimum day, 365 = maximum days.
-      minAccountAge: 1,      
+      minAccountAge: 7,      
       maxAccountAge: 365,    
 
       // If true, user receives a DM after verification.
@@ -319,8 +319,8 @@ export const botConfig = {
 
       // Human-readable descriptions for each criteria mode.
       criteria: {
-        account_age: "Account must be older than specified days",
-        server_size: "All users if server has less than 1000 members",
+        account_age: "dein account ist zu jung",
+        server_size: "...",
         none: "All users immediately"
       }
     },
@@ -421,13 +421,13 @@ export const botConfig = {
   // GENERIC BOT MESSAGES
   // =========================
   messages: {
-    noPermission: "You do not have permission to use this command.",
-    cooldownActive: "Please wait {time} before using this command again.",
-    errorOccurred: "An error occurred while executing this command.",
+    noPermission: "Du darfst das nicht mein goodboy.",
+    cooldownActive: "bro warte {time} bis du weiter machst.",
+    errorOccurred: "sorry kann ich nicht machen.",
     missingPermissions:
       "I am missing required permissions to perform this action.",
-    commandDisabled: "This command has been disabled.",
-    maintenanceMode: "The bot is currently in maintenance mode.",
+    commandDisabled: "command wurde deaktiviert.",
+    maintenanceMode: "67.",
   },
 
   // =========================
